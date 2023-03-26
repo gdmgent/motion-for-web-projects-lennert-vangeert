@@ -1,0 +1,23 @@
+header {
+    nav {
+        background: hsla(200, 50%, 80%, 1);
+        ul {
+            display: flex;
+            li {
+                list-style-type: none;
+                a {
+                    color: hsla(200, 50%, 20%, 1);
+                    text-decoration: none;
+                    padding: 1rem;
+                    display: block;
+                    &.active {
+                        background: red;
+                    }
+                    &.hover {
+                        background: hsla(200, 50%, 80%, 1);
+                    }
+                }
+            }
+        }
+    }
+}

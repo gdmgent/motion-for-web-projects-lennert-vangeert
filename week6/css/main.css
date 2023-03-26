@@ -1,0 +1,15 @@
+header nav {
+  background: hsl(200, 50%, 80%);
+}
+header nav ul {
+  display: flex;
+}
+header nav ul li {
+  list-style-type: none;
+}
+header nav ul li a {
+  color: hsl(200, 50%, 20%);
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}/*# sourceMappingURL=main.css.map */
