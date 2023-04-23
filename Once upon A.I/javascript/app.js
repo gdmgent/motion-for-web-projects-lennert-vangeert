@@ -1,36 +1,55 @@
-// Trigger CSS animations on scroll.
-// Detailed explanation can be found at http://www.bram.us/2013/11/20/scroll-animations/
+myID = document.getElementById("chapter1");
 
-// Looking for a version that also reverses the animation when
-// elements scroll below the fold again?
-// --> Check https://codepen.io/bramus/pen/vKpjNP
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.className = "left show"
+    } else {
+        myID.className = "left hide"
+    }
+};
 
-jQuery(function($) {
-  
-    // Function which adds the 'animated' class to any '.animatable' in view
-    var doAnimations = function() {
-      
-      // Calc current offset and get all animatables
-      var offset = $(window).scrollTop() + $(window).height(),
-          $animatables = $('.animatable');
-      
-      // Unbind scroll handler if we have no animatables
-      if ($animatables.length == 0) {
-        $(window).off('scroll', doAnimations);
-      }
-      
-      // Check all animatables and animate them if necessary
-          $animatables.each(function(i) {
-         var $animatable = $(this);
-              if (($animatable.offset().top + $animatable.height() - 20) < offset) {
-          $animatable.removeClass('animatable').addClass('animated');
-              }
-      });
-  
-      };
-    
-    // Hook doAnimations on scroll, and trigger a scroll
-      $(window).on('scroll', doAnimations);
-    $(window).trigger('scroll');
-  
-  });
+myID = document.getElementById("chapter2");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.className = "right show"
+    } else {
+        myID.className = "right hide"
+    }
+};
+
+myID = document.getElementById("chapter3");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.className = "left show"
+    } else {
+        myID.className = "left hide"
+    }
+};
+
+myID = document.getElementById("chapter4");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.className = "right show"
+    } else {
+        myID.className = "right hide"
+    }
+};
+
+myID = document.getElementById("chapter5");
+
+var myScrollFunc = function () {
+    var y = window.scrollY;
+    if (y >= 800) {
+        myID.className = "left show"
+    } else {
+        myID.className = "left hide"
+    }
+};
+window.addEventListener("scroll", myScrollFunc);
