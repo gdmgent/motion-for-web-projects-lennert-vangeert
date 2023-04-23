@@ -1,0 +1,37 @@
+@font-face {
+  /* RobotoFlex-VariableFont options: 
+      slnt,wdth,wght,opsz,
+      GRAD,XTRA,YOPQ,YTAS,
+      YTDE,YTFI,YTLC,YTUC */
+  font-family: "RobotoFlex";
+  src: url(RobotoFlex.ttf) format("truetype");
+}
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+main section {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+nav a {
+  font-family: "RobotoFlex";
+  font-size: 8rem;
+  font-variation-settings: "wght" 600, "wdth" 70;
+  transition: all 0.25s ease-in-out;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  font-variation-settings: "wght" 1000, "wdth" 100;
+}
+
+nav a {
+  text-shadow: 0.06em 0.06em 0px #ED1F82, -0.06em -0.06em 0px #1FEDE0;
+}/*# sourceMappingURL=style.css.map */
