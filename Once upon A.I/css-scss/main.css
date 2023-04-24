@@ -61,14 +61,6 @@ h3 {
   color: #ffffff;
 }
 
-.hide {
-  opacity: 0;
-}
-
-.show {
-  opacity: 1;
-}
-
 .left {
   font-family: "Roboto Slab", serif;
   color: #ffffff;
@@ -85,14 +77,6 @@ h3 {
   margin-left: 68vw;
   margin-top: 30vh;
   text-shadow: 2px 2px #000000;
-}
-
-.homepage {
-  background-image: url(../images/forest.jpg);
-  background-size: cover;
-  background-attachment: fixed;
-  height: 100vh;
-  width: 100vw;
 }
 
 .part-1 {
