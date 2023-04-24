@@ -1,6 +1,6 @@
 header h1 {
-  background-color: black;
-  color: white;
+  background-color: #000000;
+  color: #ffffff;
   height: 10vh;
   width: 100vw;
   text-align: center;
@@ -9,45 +9,22 @@ header h1 {
   animation: slide-in 1s ease-in-out;
 }
 
-.image {
-  background-image: url(../images/bunker.jpg);
-  height: 100vh;
-  width: 100vw;
-  background-size: cover;
-}
-.image h2 {
+h2 {
   text-align: center;
   font-size: 3rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: "Merienda", cursive;
-  background-color: white;
+  background-color: #ffffff;
   opacity: 20%;
   animation: slide-in 1s ease-in-out;
-}
-.image .button-div {
-  text-align: center;
-  margin-top: 15vh;
-}
-.image .button {
-  text-decoration: none;
-  color: black;
-  font-size: 2rem;
-  background-color: white;
-  opacity: 50%;
-  padding: 0.25rem 1rem 0.25rem 1rem;
-  border-radius: 1rem;
-}
-.image .button:hover {
-  opacity: 20%;
-  transition: 0.2s ease-in-out;
 }
 
 footer {
   font-family: "Roboto Slab", serif;
   height: 5vh;
-  color: white;
-  background-color: black;
+  color: #ffffff;
+  background-color: #000000;
   text-align: center;
   padding-top: 0.5rem;
 }
@@ -64,7 +41,7 @@ nav {
   margin-top: 7rem;
 }
 nav a {
-  color: white;
+  color: #ffffff;
   text-decoration: none;
   margin-left: 1rem;
   margin-top: 0.15rem;
@@ -81,7 +58,7 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: "Merienda", cursive;
-  color: white;
+  color: #ffffff;
 }
 
 .hide {
@@ -94,7 +71,7 @@ h3 {
 
 .left {
   font-family: "Roboto Slab", serif;
-  color: white;
+  color: #ffffff;
   width: 25vw;
   margin-left: 7vw;
   margin-top: 30vh;
@@ -103,11 +80,19 @@ h3 {
 
 .right {
   font-family: "Roboto Slab", serif;
-  color: white;
+  color: #ffffff;
   width: 25vw;
   margin-left: 68vw;
   margin-top: 30vh;
   text-shadow: 2px 2px #000000;
+}
+
+.homepage {
+  background-image: url(../images/forest.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100vw;
 }
 
 .part-1 {
@@ -123,7 +108,7 @@ h3 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   font-family: "Merienda", cursive;
-  background-color: white;
+  background-color: #ffffff;
   opacity: 20%;
   animation: slide-in 1s ease-in-out;
 }
@@ -171,6 +156,92 @@ main section {
   width: 100vw;
   height: 100vh;
   scroll-snap-align: start;
+}
+
+html {
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  background: #222;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.section1,
+.section2 {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.section1::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../images/forest.jpg") top center;
+  background-size: cover;
+  transform: translateZ(-1px) scale(2.2);
+  filter: blur(2px);
+}
+
+.section1::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../images/parallax.png") left;
+  background-size: cover;
+}
+
+.section1 .text {
+  top: 10%;
+  transform: translateZ(-0.5px) scale(1.5, 1.6) translate(-33%, 10%);
+}
+
+.section2 {
+  background-image: url(../images/bunker.jpg);
+  background-size: cover;
+}
+
+.text {
+  top: 30%;
+  left: 50%;
+  position: absolute;
+  font-family: "Merienda", cursive;
+  font-size: 4vw;
+  color: #000000;
+  transform: scale(1, 1.1) translate(-50%, 10%);
+}
+
+.button-div {
+  text-align: center;
+  margin-top: 3vh;
+}
+
+.button {
+  font-family: "Roboto Slab", serif;
+  text-decoration: none;
+  color: #000000;
+  font-size: 2rem;
+  background-color: #ffffff;
+  opacity: 75%;
+  padding: 0.25rem 1rem 0.25rem 1rem;
+  border-radius: 1rem;
+}
+
+.button:hover {
+  opacity: 50%;
+  background-color: red;
+  transition: 0.2s ease-in-out;
 }
 
 @keyframes slide-in {
