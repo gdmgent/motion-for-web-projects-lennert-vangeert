@@ -85,22 +85,22 @@ transform: translate(0, -5px);
 }
 #animated {
   background-attachment: fixed;
-  background-image: url(/homepage/images/arcade.jpg);
+  background-image: url(homepage/images/arcade.jpg);
   background-size: cover;
 }
 #ai {
   background-attachment: fixed;
-  background-image: url(/homepage/images/room.jpg);
+  background-image: url(homepage/images/room.jpg);
   background-size: cover;
 }
 #carre {
   background-attachment: fixed;
-  background-image: url(/homepage/images/lines.jpg);
+  background-image: url(homepage/images/lines.jpg);
   background-size: cover;
 }
 #github {
   background-attachment: fixed;
-  background-image: url(/homepage/images/bars.jpg);
+  background-image: url();
   background-size: cover;
 }
 footer {
