@@ -85,7 +85,7 @@ transform: translate(0, -5px);
 }
 #animated {
   background-attachment: fixed;
-  background-image: url(../images/arcade.jpg);
+  background-image: url(../homepage/images/arcade.jpg);
   background-size: cover;
 }
 #ai {
