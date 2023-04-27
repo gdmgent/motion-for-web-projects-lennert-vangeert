@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap");
+/* main */
+body {
+  font-family: "Bruno Ace", cursive;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+main section {
+  width: 100vw;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+/* body */
+header {
+  position: relative;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1vh;
+  height: 8vh;
+  font-size: 24px;
+  box-shadow: 0 0 30px #ccc;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
+    0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red;
+}
+.opener {
+  position: fixed;
+  z-index: 100;
+  height: 100vh;
+  width: 100vw;
+  background-color: #000000;
+  animation: slideOut 2.2s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.opener h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 60px;
+  color: #fff;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
+    0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red;
+}
+section {
+  height: 100vh;
+  text-align: center;
+}
+section h1 {
+  text-align: center;
+  padding-top: 20vh;
+  font-size: 60px;
+  color: #fff;
+  animation: flicker-red 2.5s infinite alternate;
+  margin-bottom: 3vh;
+}
+section a {
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  animation: flicker-red 2.7s infinite alternate;
+  animation-delay: 0.2s;
+}
+section a:hover {
+transform: translate(0, -5px);
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 30px #ccc;
+  text-shadow: none;
+}
+#animated {
+  background-attachment: fixed;
+  background-image: url(/homepage/images/arcade.jpg);
+  background-size: cover;
+}
+#ai {
+  background-attachment: fixed;
+  background-image: url(/homepage/images/room.jpg);
+  background-size: cover;
+}
+#carre {
+  background-attachment: fixed;
+  background-image: url(/homepage/images/lines.jpg);
+  background-size: cover;
+}
+#github {
+  background-attachment: fixed;
+  background-image: url(/homepage/images/bars.jpg);
+  background-size: cover;
+}
+footer {
+  position: relative;
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  padding: 1vh;
+  height: 8vh;
+  font-size: 24px;
+  box-shadow: 0 0 30px #ccc;
+  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
+    0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red;
+}
+/* animations */
+@keyframes slideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translate(100%, -100%);
+  }
+}
+@keyframes flicker-red {
+  0%,
+  18%,
+  22%,
+  25%,
+  53%,
+  57%,
+  100% {
+    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
+      0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red;
+  }
+  20%,
+  24%,
+  55% {
+    text-shadow: none;
+  }
+}
+
+
+/* source https://css-tricks.com/how-to-create-neon-text-with-css/ */
