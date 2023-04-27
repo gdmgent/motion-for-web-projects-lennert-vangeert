@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+body {
+    font-family: 'Bruno Ace', cursive;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 14vh;
+    background-color: #535050;
+    box-shadow: 10px 0 10px #1c1c1c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    font-size: 2rem;
+}
+main {
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    color: #000;
+    width: 60vh;
+    height: 15vw;
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #ccc;
+    transition: 0.2s ease-in-out;
+}
+a:hover {
+    box-shadow: 0 0 10px #ccc;
+    transform: scale(1.1);
+    transition: 0.2s ease-in-out;
+    
+}
+h1 {
+    text-align: center;
+}
+.h1-ai {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #0fa,
+    0 0 82px #0fa,
+    0 0 92px #0fa,
+    0 0 102px #0fa,
+    0 0 151px #0fa;
+}
+.h1-animated {
+    text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ff002b,
+    0 0 82px #ff002b,
+    0 0 92px #ff002b;
+}
+.animated {
+    background-image: url(../motion-for-web-projects-lennert-vangeert/images/animated\ product.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+.ai {
+    background-image: url(../motion-for-web-projects-lennert-vangeert/images/once\ upon\ ai.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
