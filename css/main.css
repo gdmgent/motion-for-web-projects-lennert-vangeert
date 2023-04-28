@@ -143,5 +143,20 @@ footer {
   }
 }
 
-
+@media  (max-width: 700px) {
+  main {
+    scroll-snap-type:none;
+  }
+  section h1 {
+    font-size: 40px;
+  }
+  section {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  footer {
+    height: 5vh;
+    font-size: 20px;
+  }
+}
 /* source https://css-tricks.com/how-to-create-neon-text-with-css/ */
