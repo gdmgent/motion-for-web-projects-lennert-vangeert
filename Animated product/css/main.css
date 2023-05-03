@@ -214,7 +214,6 @@ footer {
     gap: 3vw;
   }
 }
-
 /* scrollbar */
 ::-webkit-scrollbar {
   display: none;
