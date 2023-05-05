@@ -123,13 +123,13 @@ footer {
     font-size: 40px;
   }
   section {
-    /* padding-left: 30px;
-    padding-right: 30px; */
+    padding-left: 30px;
+    padding-right: 30px;
   }
-  section a {
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  /* section a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  } */
   #animated, #ai, #carre, #github {
     background-position: center;
   }
