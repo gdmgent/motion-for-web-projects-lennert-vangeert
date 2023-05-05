@@ -126,6 +126,9 @@ footer {
     /* padding-left: 30px;
     padding-right: 30px; */
   }
+  #animated, #ai, #carre, #github {
+    background-position: center;
+  }
   footer {
     height: 5vh;
     font-size: 20px;
