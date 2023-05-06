@@ -89,6 +89,11 @@ section a:hover {
   background-image: url(../images/bars.jpg);
   background-size: cover;
 }
+#weeks {
+  background-attachment: fixed;
+  background-image: url(../images/cafe.jpg);
+  background-size: cover;
+}
 footer {
   position: relative;
   background-color: #000000;
@@ -120,7 +125,20 @@ footer {
   }
 }*/
 /* mediaquery's */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
+  .grid {
+    display: grid;
+    justify-content: center;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+  }
+  .grid a {
+    margin: 5px;
+  }
+}
+
+
+
+@media (max-width: 730px) {
   main {
     scroll-snap-type: none;
   }
@@ -135,7 +153,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 10px;
   } */
-  #animated, #ai, #carre, #github {
+  #animated, #ai, #carre, #github, #weeks {
     background-position: center;
   }
   footer {
@@ -143,10 +161,21 @@ footer {
     font-size: 20px;
   }
 }
+
+@media (max-width: 500px) {
+  .grid a {
+    padding: 4px;
+}
+}
+
 @media (max-width: 300px) {
   header {
     height: 7vh;
     font-size: 20px;
+  }
+  section {
+    padding-left: 15px;
+    padding-right: 15px;
   }
   section h1 {
     font-size: 30px;
