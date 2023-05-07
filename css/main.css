@@ -2,6 +2,7 @@
 /* main */
 body {
   font-family: "Bruno Ace", cursive;
+  overflow-y: hidden;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -21,7 +22,8 @@ main section {
 }
 /* body */
 header {
-  position: relative;
+  position: absolute;
+  width: 100vw;
   background-color: #000000;
   color: white;
   text-align: center;
@@ -40,12 +42,17 @@ section h1 {
   text-align: center;
   padding-top: 20vh;
   font-size: 60px;
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #ff0000,
+    0 0 82px #ff0000,
+    0 0 92px #ff0000,
+    0 0 102px #ff0000,
+    0 0 151px #ff0000;
   color: #fff;
-  animation: flicker-red 2.5s infinite alternate;
   margin-bottom: 3vh;
-  
-  /* text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
-  0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red; */
 }
 section a {
   text-decoration: none;
@@ -57,8 +64,6 @@ section a {
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  animation: flicker-red 2.7s infinite alternate;
-  animation-delay: 0.2s;
 }
 section a:hover {
   transform: translate(0, -5px);
@@ -91,38 +96,8 @@ section a:hover {
 }
 #weeks {
   background-attachment: fixed;
-  background-image: url(../images/cafe.jpg);
+  background-image: url(../images/heart.jpg);
   background-size: cover;
-}
-footer {
-  position: relative;
-  background-color: #000000;
-  color: white;
-  text-align: center;
-  padding: 1vh;
-  height: 8vh;
-  font-size: 24px;
-  box-shadow: 0 0 30px #ccc;
-  text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
-    0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red;
-}
-/* animations */
-@keyframes flicker-red {
-  0%,
-  18%,
-  22%,
-  25%,
-  53%,
-  57%,
-  100% {
-    text-shadow: 0 0 4px #fff, 0 0 11px #fff, 0 0 19px #fff, 0 0 40px red,
-      0 0 80px red, 0 0 90px red, 0 0 100px red, 0 0 150px red;
-  }
-  20%,
-  24%,
-  55% {
-    text-shadow: none;
-  }
 }
 /* mediaquery's */
 @media (max-width: 800px) {
@@ -156,10 +131,6 @@ footer {
   #animated, #ai, #carre, #github, #weeks {
     background-position: center;
   }
-  footer {
-    height: 8vh;
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 500px) {
@@ -184,10 +155,6 @@ footer {
     font-size: 24px;
     padding-top: 25px;
     padding-bottom: 25px;
-  }
-  footer {
-    height: 5vh;
-    font-size: 10px;
   }
 }
 /* source https://css-tricks.com/how-to-create-neon-text-with-css/ */
