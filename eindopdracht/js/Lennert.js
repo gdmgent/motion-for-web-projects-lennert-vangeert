@@ -173,14 +173,21 @@ function lennertvg(fase) {
         },
         "deel4"
         )
+        .to(
+          ".part5",
+          {
+            x: "-45vw",
+          },
+          "deel4"
+        )
         .add("deel5")
         .to("#lennertvg .moon", {
           opacity: "0",
-        }, "deel")
+        }, "deel5")
         .to("#lennertvg .box img", {
           opacity: "0",
         }, "deel5")
-
+        
 
 
 
