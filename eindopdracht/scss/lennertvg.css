@@ -4,6 +4,7 @@
   overflow: hidden;
   position: relative;
   height: 400vh;
+  color: white;
 }
 #lennertvg .box {
   z-index: -2;
@@ -69,9 +70,9 @@
 }
 #lennertvg .satelite {
   position: absolute;
-  left: -10vw;
+  left: -20vw;
   z-index: 1;
-  height: 100px;
+  height: 150px;
 }
 #lennertvg .rocket1 {
   transform: rotate(90deg);

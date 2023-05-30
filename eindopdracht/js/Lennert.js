@@ -172,6 +172,7 @@ function lennertvg(fase) {
         {
           x: "120vw",
           y: "20vh",
+          rotation: "60deg",
         },
       )
       .add("deel4")
@@ -184,8 +185,8 @@ function lennertvg(fase) {
         {
           opacity: 1,
           x: "20vw",
-          y: "15vh",
-          rotation: "-42",
+          y: "22vh",
+          rotation: "-30",
           // delay: "1",
         },
         "deel4"
