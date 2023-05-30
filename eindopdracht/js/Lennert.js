@@ -41,19 +41,19 @@ function lennertvg(fase) {
         "deel1"
       )
       .to(
-        ".part1",
-        {
-          x: "-5vw",
-        },
-        "deel1"
-      )
-      .to(
         ".cloud-1",
         {
           x: "25vw",
         },
         "deel1"
-      )
+        )
+        .to(
+          ".part1",
+          {
+            x: "-5vw",
+          },
+          "deel1"
+        )
       .add("deel2")
       .to(
         ".cloud-2",
@@ -67,7 +67,7 @@ function lennertvg(fase) {
         {
           x: "4vw",
         },
-        "deel2"
+        "deel3"
       )
       .to(
         ".wright",
@@ -147,16 +147,32 @@ function lennertvg(fase) {
       .to(
         "#lennertvg .big-rocket",
         {
-          y: "-100vh",
+          y: "-150vh",
+        },
+        "deel3"
+      )
+      .to(
+        "#lennertvg .mars",
+        {
+          x: "-150vw",
+          y: "18vh",
+          rotation: "180deg",
         },
         "deel3"
       )
       .to(
         ".part4",
         {
-          x: "30vw",
+          x: "20vw",
         },
         "deel4"
+      )
+      .to(
+        ".satelite",
+        {
+          x: "120vw",
+          y: "20vh",
+        },
       )
       .add("deel4")
       .to("#lennertvg .moon", {
@@ -166,6 +182,7 @@ function lennertvg(fase) {
       .to(
         "#lennertvg .rocket1",
         {
+          opacity: 1,
           x: "20vw",
           y: "15vh",
           rotation: "-42",
