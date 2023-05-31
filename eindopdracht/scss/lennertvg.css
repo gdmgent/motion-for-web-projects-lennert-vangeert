@@ -90,6 +90,7 @@
   position: absolute;
   left: -100vw;
   margin-top: 10vh;
+  transform: scale(0.1);
 }
 #lennertvg .cloud {
   position: absolute;

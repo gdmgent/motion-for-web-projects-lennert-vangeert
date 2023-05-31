@@ -172,6 +172,8 @@ function lennertvg(fase) {
       .add("deel4")
       .to("#lennertvg .moon", {
         x: "100vw",
+        scaleX: "1",
+        scaleY: "1",
       }, "deel4")
       .to(
         "#lennertvg .rocket1",
