@@ -1,6 +1,0 @@
-paste-machine
-
-vierkant veranderd van grootte en vorm en gaat naar een andere plek op de pagina
-daar verschijnt van achter de vorm een element en dit gebeurd meerdere keren
-
-de elementen gaan over een bepaald onderwerp
