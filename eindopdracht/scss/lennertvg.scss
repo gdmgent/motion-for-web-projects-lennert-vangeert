@@ -20,7 +20,7 @@
         text-align: center;
         letter-spacing: 3px;
     }
-    h2 {
+    h5 {
         text-align: center;
     }
     p {
@@ -43,7 +43,7 @@
         text-align: right; 
     }
     .part4 {
-        margin-left: -10vw;
+        margin-left: -20vw;
         margin-top: 50vh;
         text-align: left;
         height: 30vh;
@@ -91,14 +91,10 @@
         height: 50vh;
     }
     .moon {
-        width: 500vw;
+        width: 100vw;
         position: absolute;
-        left: -500vw;
-       
-        // opacity: 0;
-    }
-    .spacefill {
-        height: 100vh;
+        left: -100vw;
+        margin-top: 10vh;
     }
     .cloud {
         position: absolute;

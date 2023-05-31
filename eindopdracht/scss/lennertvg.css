@@ -20,7 +20,7 @@
   text-align: center;
   letter-spacing: 3px;
 }
-#lennertvg h2 {
+#lennertvg h5 {
   text-align: center;
 }
 #lennertvg p {
@@ -43,7 +43,7 @@
   text-align: right;
 }
 #lennertvg .part4 {
-  margin-left: -10vw;
+  margin-left: -20vw;
   margin-top: 50vh;
   text-align: left;
   height: 30vh;
@@ -86,12 +86,10 @@
   height: 50vh;
 }
 #lennertvg .moon {
-  width: 500vw;
+  width: 100vw;
   position: absolute;
-  left: -500vw;
-}
-#lennertvg .spacefill {
-  height: 100vh;
+  left: -100vw;
+  margin-top: 10vh;
 }
 #lennertvg .cloud {
   position: absolute;

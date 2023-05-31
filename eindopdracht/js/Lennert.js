@@ -131,12 +131,6 @@ function lennertvg(fase) {
         },
         "deel3"
       )
-      // .to(
-      //   "#lennertvg .box",
-      //   {
-      //     backgroundColor: "black",
-      //   },
-      // )
       .to(
         ".part3",
         {
@@ -163,7 +157,7 @@ function lennertvg(fase) {
       .to(
         ".part4",
         {
-          x: "20vw",
+          x: "30vw",
         },
         "deel4"
       )
@@ -177,17 +171,15 @@ function lennertvg(fase) {
       )
       .add("deel4")
       .to("#lennertvg .moon", {
-        x: "500vw",
-        // delay: "1",
+        x: "100vw",
       }, "deel4")
       .to(
         "#lennertvg .rocket1",
         {
           opacity: 1,
-          x: "20vw",
-          y: "22vh",
+          x: "21vw",
+          y: "30vh",
           rotation: "-30",
-          // delay: "1",
         },
         "deel4"
         )
@@ -198,6 +190,7 @@ function lennertvg(fase) {
           },
           "deel4"
         )
+        
         .add("deel5")
         .to("#lennertvg .moon", {
           opacity: "0",

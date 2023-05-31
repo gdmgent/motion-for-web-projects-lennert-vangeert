@@ -3,6 +3,7 @@
 body {
   font-family: "Bruno Ace", cursive;
   overflow-y: hidden;
+  cursor: none;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -62,7 +63,7 @@ section a {
   border-radius: 5px;
   background-color: transparent;
   color: #fff;
-  cursor: pointer;
+  cursor: none;
   transition: all 0.3s ease-in-out;
 }
 section a:hover {
