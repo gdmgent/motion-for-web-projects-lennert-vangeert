@@ -27,6 +27,7 @@ function lennertvg(fase) {
           top: "calc(50vh - 10vw)",
           width: "20vw",
           height: "20vw",
+          rotation: "180deg",
         },
         "deel1"
       )
@@ -43,43 +44,47 @@ function lennertvg(fase) {
       .to(
         ".cloud-1",
         {
-          x: "25vw",
+          x: "45vw",
         },
         "deel1"
-        )
-        .to(
-          ".part1",
-          {
-            x: "-5vw",
-          },
-          "deel1"
-        )
+      )
+      .to(
+        ".part1",
+        {
+          x: "-5vw",
+        },
+        "deel1"
+      )
       .add("deel2")
       .to(
         ".cloud-2",
         {
-          x: "-25vw",
+          x: "-60vw",
+          y: "-10vh",
         },
         "deel2"
       )
       .to(
         ".cloud-3",
         {
-          x: "4vw",
+          x: "10vw",
+          y: "-10vh",
         },
         "deel3"
       )
-      .to(
+      .from(
         ".wright",
         {
-          x: "-39vw",
+          x: "10vw",
+          scaleX: "1.2",
+          scaleY: "1.5",
         },
         "deel2"
       )
-      .to(
+      .from(
         ".part2",
         {
-          x: "30vw",
+          x: "-30vw",
         },
         "deel3"
       )
@@ -123,6 +128,23 @@ function lennertvg(fase) {
         },
         "deel2"
       )
+      .add("deel2.5")
+      .to(
+        "#lennertvg .wright",
+        {
+          y: "-30vh",
+          opacity: "0",
+          scale: "0",
+        },
+        "deel2.5"
+      )
+      .to(
+        "#lennertvg .box",
+        {
+          backgroundColor: "black",
+        },
+        "deel2.5"
+      )
       .add("deel3")
       .to(
         "#lennertvg .box .bg",
@@ -142,14 +164,16 @@ function lennertvg(fase) {
         "#lennertvg .big-rocket",
         {
           y: "-150vh",
+          scale: "0",
         },
         "deel3"
       )
-      .to(
+      .from(
         "#lennertvg .mars",
         {
           x: "-150vw",
-          y: "18vh",
+          y: "-18vh",
+          scale: "0.2",
           rotation: "180deg",
         },
         "deel3"
@@ -161,20 +185,21 @@ function lennertvg(fase) {
         },
         "deel4"
       )
-      .to(
-        ".satelite",
-        {
-          x: "120vw",
-          y: "20vh",
-          rotation: "60deg",
-        },
-      )
+      .from(".satelite", {
+        x: "120vw",
+        y: "20vh",
+        rotation: "60deg",
+        scale: "1.5",
+      })
       .add("deel4")
-      .to("#lennertvg .moon", {
-        x: "100vw",
-        scaleX: "1",
-        scaleY: "1",
-      }, "deel4")
+      .to(
+        "#lennertvg .moon",
+        {
+          x: "100vw",
+          scale: "1",
+        },
+        "deel4"
+      )
       .to(
         "#lennertvg .rocket1",
         {
@@ -184,33 +209,40 @@ function lennertvg(fase) {
           rotation: "-30",
         },
         "deel4"
-        )
-        .to(
-          ".part5",
-          {
-            x: "-45vw",
-          },
-          "deel4"
-        )
-        
-        .add("deel5")
-        .to("#lennertvg .moon", {
+      )
+      .to(
+        ".part5",
+        {
+          x: "-45vw",
+        },
+        "deel4"
+      )
+
+      .add("deel5")
+      .to(
+        "#lennertvg .moon",
+        {
           opacity: "0",
-        }, "deel5")
-        .to("#lennertvg .box img", {
+        },
+        "deel5"
+      )
+      .to(
+        "#lennertvg .box img",
+        {
           opacity: "0",
-        }, "deel5")
-        
-
-
-
-      .to("#lennertvg .box", {
-        backgroundColor: "white",
-        left: "40vw",
-        top: "calc(50vh - 10vw)",
-        width: "20vw",
-        height: "20vw",
-      }, "deel5")
-      ;
+        },
+        "deel5"
+      )
+      .to(
+        "#lennertvg .box",
+        {
+          backgroundColor: "white",
+          left: "40vw",
+          top: "calc(50vh - 10vw)",
+          width: "20vw",
+          height: "20vw",
+        },
+        "deel5"
+      );
   }
 }

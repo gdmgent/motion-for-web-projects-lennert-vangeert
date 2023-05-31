@@ -12,27 +12,17 @@
         place-items: center;
         .bg {
             opacity: 0;
+            animation: bg 10s infinite;
         }
     }
-    
-    h1 {
-        margin-top: 2vh;
-        text-align: center;
-        letter-spacing: 3px;
-    }
-    h5 {
-        text-align: center;
-    }
-    p {
-        width: 20vw;
-    }
+    //parts text
     .part1 {
         margin-left: 75vw;
         margin-top: 18vh;
         text-align: right; 
     }
     .part2 {
-        margin-left: -20vw;
+        margin-left: 10vw;
         margin-top: 50vh;
         text-align: left;
         height: 10vh;
@@ -53,25 +43,33 @@
         margin-top: 18vh;
         text-align: right; 
     }
-    
-    
-
-
-
-    .plane {
-        position: absolute;
-        z-index: 1;
-        height: 200px;
+    //other text
+    h1 {
+        margin-top: 2vh;
+        text-align: center;
+        letter-spacing: 3px;
+        animation: flying 10s infinite;
     }
+    h5 {
+        text-align: center;
+    }
+    p {
+        width: 20vw;
+    }
+    //flying objects
     .plane1 {
         left: -15vw;
         transform: rotate(-90deg);
+        position: absolute;
+        z-index: 1;
+        height: 200px;
     }
     .mars {
         position: absolute;
         left: 120vw;
         height: 200px;
         z-index: 1;
+        scale: 2;
     }
     .satelite {
         position: absolute;
@@ -118,7 +116,39 @@
         width: 25vw;
         position: absolute;
         top: 70vh;
-        right: -30vw;
+        right: 10vw;
         border-radius: 1rem;
+    }
+    //animations
+    @keyframes bg {
+        0%, 100% {
+            transform: rotate(3deg);
+        }
+        25% {
+            scale: 1.05;
+        }
+        50% {
+            
+            transform: rotate(-3deg)
+        }
+        75% {
+            scale: 1;
+        }
+    }
+    @keyframes flying {
+        0% {
+            transform: rotate(3deg);
+        }
+        25% {
+            transform: translateX(2vw);
+        }
+        50% {
+            transform: rotate(-6deg);
+        }
+        100% {
+            transform: translateX(-2vw);
+            transform: rotate(3deg);
+        }
+        
     }
 }
