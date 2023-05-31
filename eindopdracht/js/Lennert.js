@@ -165,6 +165,7 @@ function lennertvg(fase) {
         {
           y: "-150vh",
           scale: "0",
+          
         },
         "deel3"
       )

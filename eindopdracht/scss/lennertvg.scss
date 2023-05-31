@@ -48,6 +48,7 @@
         margin-top: 2vh;
         text-align: center;
         letter-spacing: 3px;
+        letter-spacing: 2px;
         animation: flying 10s infinite;
     }
     h5 {
@@ -144,10 +145,12 @@
         }
         50% {
             transform: rotate(-6deg);
+            letter-spacing: 10px;
         }
         100% {
             transform: translateX(-2vw);
             transform: rotate(3deg);
+            letter-spacing: 2px;
         }
         
     }
