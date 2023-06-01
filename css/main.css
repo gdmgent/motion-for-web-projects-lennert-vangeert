@@ -3,12 +3,38 @@
 body {
   font-family: "Bruno Ace", cursive;
   overflow-y: hidden;
-  cursor: none;
+  
 }
 ::-webkit-scrollbar {
   display: none;
 }
+nav {
+  position: absolute;
+  top: 10vh;
+  left: 1vw;
+  background-color: rgb(83, 82, 82);
+  padding: 15px;
+  border-radius: 1rem;
+  opacity: 75%;
+  display: grid;
+}
+nav a {
+  text-decoration: none;
+  list-style: none;
+  color: black;
+  font-weight: 700;
+  margin-top: 5px;
+  transition: 0.4s ease-in-out;
+  opacity: 100%;
 
+}
+nav a:hover {
+  
+  scale: 1.05;
+  transition: 0.4s ease-in-out;
+  color: white;
+  text-shadow: 0 0 30px #ccc;
+}
 main {
   height: 100vh;
   overflow-x: hidden;
@@ -63,7 +89,7 @@ section a {
   border-radius: 5px;
   background-color: transparent;
   color: #fff;
-  cursor: none;
+  
   transition: all 0.3s ease-in-out;
 }
 section a:hover {
